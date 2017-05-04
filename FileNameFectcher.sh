@@ -5,20 +5,3 @@ do
 	FILENAME=${i}
 	echo $FILENAME >> filesNames.txt
 done
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
