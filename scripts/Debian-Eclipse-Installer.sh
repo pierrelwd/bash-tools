@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Run this script as root
 #Set here the mirror's url you want to use
 MIRROR="http://mirror.ibcp.fr/pub/eclipse//technology/epp/downloads/release/neon/3/eclipse-jee-neon-3-linux-gtk-x86_64.tar.gz"
 #Set here the downloaded archive's file
@@ -10,12 +11,13 @@ echo "###########################"
 echo "# Debian Ecipse Installer #"
 echo "###########################"
 
-#Download and extract archive
+#Download, extract and delete archive
 cd /opt
 echo "## Archive downloading ####"
 wget $MIRROR
 echo "## Archive extraction ######"
 tar -xzf $ARCHIVE
+rm -rf $ARCHIVE
 
 #Create Shortcut
 echo "## Shortut creation #######"
