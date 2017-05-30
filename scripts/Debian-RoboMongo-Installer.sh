@@ -7,21 +7,21 @@ MIRROR="https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-
 ARCHIVE="robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz"
 SHORTCUT="/usr/share/applications/robomongo.desktop"
 
-echo "###########################"
-echo "# Debian Ecipse Installer #"
-echo "###########################"
+echo "##############################"
+echo "# Debian RoboMongo Installer #"
+echo "##############################"
 
 #Download, extract and delete archive
 cd /opt
-echo "## Archive downloading ####"
+echo "## Archive downloading #######"
 wget $MIRROR
-echo "## Archive extraction ######"
+echo "## Archive extraction ########"
 tar -xzf $ARCHIVE
 rm -rf $ARCHIVE
 mv robomongo-1.0.0-linux-x86_64-89f24ea robomongo
 
 #Create Shortcut
-echo "## Shortut creation #######"
+echo "## Shortut creation ##########"
 echo "#"
 echo "#"
 echo "#"
@@ -34,4 +34,4 @@ echo Type=Application >> $SHORTCUT
 #echo Icon=/opt/ >> $SHORTCUT
 echo Categories=Developpement >> $SHORTCUT
 
-echo "## Installation complete ##"
+echo "## Installation complete #####"
